@@ -57,7 +57,7 @@ console.log(getFormatString('hello world', 'uppercase'));
 console.log(getFormatString('hello world', 'lowercase'));
 console.log(getFormatString('hello world', 'capitalize'));
 
-// 9. Создать функцию, которая принимает строку и символ, возвращает строку без переданного символа.
+// 9. Создать функцию, которая принимает строку и символ,возвращает строку без переданного символа.
 
 function getString(text: string, char: string): string {
   return text.split(char).join('');
