@@ -42,7 +42,8 @@ interface IStudent extends IUser {
 
 // 8. Создать функцию, которая принимает строку и вариант,  как именно форматировать строку (задание №5) и на основе этого возвращает форматированную строку.
 
-function getFormatString(text: string, format: TextFormat): string {  switch (format) {
+function getFormatString(text: string, format: TextFormat): string {
+  switch (format) {
     case 'uppercase':
       return text.toUpperCase();
     case 'lowercase':
@@ -92,4 +93,4 @@ const users: IUser[] = [
   },
 ];
 
-const filteredByEmail: IUser[] = users.filter((user) => user.email.includes('gmail.ru'));
+const filteredByEmail: IUser[] = users.filter((user: IUser) => user.email.includes('gmail.ru'));
